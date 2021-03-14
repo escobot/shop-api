@@ -26,5 +26,5 @@ public interface IUserRepository extends MongoRepository<User, String> {
 
     // select country, [names] from user group by country
     @Aggregation("{ $group: { _id : $country, names : { $addToSet: $name } } }")
-    List<UserAggregation> groupByCountryAndName();
+    List<UserAggregation> groupByCountry();
 }
