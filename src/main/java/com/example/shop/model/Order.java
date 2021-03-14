@@ -21,7 +21,7 @@ public class Order {
 
     private String userId;
 
-    private String orderId;
+    private String orderName;
 
     private LocalDateTime orderTime;
 

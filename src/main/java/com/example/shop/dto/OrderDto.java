@@ -9,12 +9,12 @@ import java.time.LocalDateTime;
 @Getter
 @NoArgsConstructor
 public class OrderDto {
-    private String orderId;
+    private String orderName;
     private String userId;
 
     public Order convertToOrder() {
         return Order.builder()
-                .orderId(orderId)
+                .orderName(orderName)
                 .userId(userId)
                 .orderTime(LocalDateTime.now())
                 .build();
