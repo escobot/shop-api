@@ -37,4 +37,37 @@ public class UserServiceTest {
 
         Assertions.assertThat(users).hasSize(1);
     }
+
+//    @Test
+//    public void test_findUsersByCountry() {
+//        UserDto userDto1 = UserDto.builder()
+//                .country("US")
+//                .name("Joe")
+//                .username("joe1")
+//                .build();
+//
+//        UserDto userDto2 = UserDto.builder()
+//                .country("US")
+//                .name("Max")
+//                .username("max1")
+//                .build();
+//
+//        UserDto userDto3 = UserDto.builder()
+//                .country("CA")
+//                .name("Tim")
+//                .username("tim1")
+//                .build();
+//
+//        userService.saveUser(userDto1.convertToUser());
+//        userService.saveUser(userDto2.convertToUser());
+//        userService.saveUser(userDto3.convertToUser());
+//
+//        List<User> usersFromUS = userRepository.findByCountryAsCustom("US");
+//
+//        Assertions.assertThat(usersFromUS).hasSize(2);
+//
+//        List<User> usersFromCA = userRepository.findByCountryAsCustom("CA");
+//
+//        Assertions.assertThat(usersFromCA).hasSize(1);
+//    }
 }
