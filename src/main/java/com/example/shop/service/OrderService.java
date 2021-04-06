@@ -19,6 +19,11 @@ public class OrderService implements IOrderService {
     }
 
     @Override
+    public void deleteOrder(Order order) {
+        orderRepository.delete(order);
+    }
+
+    @Override
     public List<Order> ordersOfUser(String userId) {
         return orderRepository.findByUserId(userId);
     }
