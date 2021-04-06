@@ -9,6 +9,8 @@ import java.util.List;
 public interface IUserService {
     void saveUser(User user);
 
+    void deleteUser(User user);
+
     List<User> findUsersByCountry(String country);
 
     List<UserAggregation> groupByCountry();

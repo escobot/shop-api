@@ -21,6 +21,11 @@ public class UserService implements IUserService {
     }
 
     @Override
+    public void deleteUser(User user) {
+        userRepository.delete(user);
+    }
+
+    @Override
     public List<User> findUsersByCountry(String country) {
         return userRepository.findByCountryAsCustom(country);
     }
