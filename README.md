@@ -8,8 +8,7 @@ Requirements:
 
 Setup:
 ```bash
-$ cd springboot-mongo
+$ cd shop-api
 $ gradlew bootJar
 $ gradlew bootRun
 ```
-
