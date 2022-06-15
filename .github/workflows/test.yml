@@ -14,4 +14,4 @@ jobs:
       - name: Setup Gradle
         uses: gradle/gradle-build-action@v2
       - name: Build and Test
-        run: ./gradlew
+        run: ./gradlew test
